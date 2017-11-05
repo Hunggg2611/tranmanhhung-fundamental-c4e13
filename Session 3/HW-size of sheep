@@ -1,0 +1,16 @@
+print("Hello,I am a herdsman and these are my sheep size:")
+size = [5, 7, 300, 90, 24, 50, 75]
+print(size)
+months = int(input("How long do you want to keep them grow? "))
+for i in range (months):
+    print("Now my biggest sheep has size {0}, let's shear it!".format(max(size)))
+    size[(size.index(max(size)))] = 8
+    print("After shearing, here is my flock:")
+    print(size)
+    for g in range (len(size)):
+        size [g] += 50
+    print("One month has passed, now here is my flock:")
+    print(size)
+    print("My flock has size in total" ,sum(size))
+    print("I would get {0} * 3$ = {1}$".format(sum (size),sum (size)*2))
+    print("Cheap isn't it?")
