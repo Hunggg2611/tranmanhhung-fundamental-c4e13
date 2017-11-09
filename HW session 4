@@ -1,20 +1,11 @@
-prices = {
-    "banana": 4,
-    "apple": 2,
-    "orange": 1.5,
-    "pear": 3,
+inventory = {
+    'gold' : 500,
+    'pouch' : ['flint', 'twine', 'gemstone'],
+    'backpack' : ['xylophone', 'dagger', 'bedroll', 'bread loaf']
 }
-stock = {
-    "banana": 6,
-    "apple": 0,
-    "orange": 32,
-    "pear": 15,
-}
-total = 0
-for t in stock.keys():
-    print(t, stock[t])
-    print("prices:",prices[t])
-    eq = stock[t]*prices[t]
-    print()
-    total += eq
-print("Total ",total)
+
+inventory['pocket'] = ['seashell', 'strange Berry', 'lint']
+inventory['backpack'].remove('dagger')
+inventory['gold'] += 50
+print(inventory)
+
